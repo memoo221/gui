@@ -1,4 +1,9 @@
-﻿namespace Vechile_Renting_System
+﻿
+
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace DisplayCars
 {
     partial class Checkout
     {
@@ -28,404 +33,401 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            panel1 = new Panel();
-            dropOffValue = new Label();
-            label9 = new Label();
-            pickUpValue = new Label();
-            label7 = new Label();
-            returnDateValue = new Label();
-            label6 = new Label();
-            label2 = new Label();
-            totalValueLbl = new Label();
-            totalLbl = new Label();
-            taxValuelbl = new Label();
-            taxlbl = new Label();
-            StartDateValue = new Label();
-            lblDays = new Label();
-            priceValuelbl = new Label();
-            lbPriCePerday = new Label();
-            label3 = new Label();
-            groupPaymentMetod = new GroupBox();
-            CardDetailspanel = new Panel();
-            CCVtxtbox = new TextBox();
-            CCVlbl = new Label();
-            ExpDateTxtbox = new TextBox();
-            ExpDatelbl = new Label();
-            cardNumTxtBox = new TextBox();
-            CardNumlbl = new Label();
-            Creditbtn = new RadioButton();
-            CasHbtn = new RadioButton();
-            label4 = new Label();
-            btnPay = new Button();
-            backBtn = new Button();
-            invalidLabel = new Label();
-            panel1.SuspendLayout();
-            groupPaymentMetod.SuspendLayout();
-            CardDetailspanel.SuspendLayout();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dropOffValue = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pickUpValue = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.returnDateValue = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.totalValueLbl = new System.Windows.Forms.Label();
+            this.totalLbl = new System.Windows.Forms.Label();
+            this.taxValuelbl = new System.Windows.Forms.Label();
+            this.taxlbl = new System.Windows.Forms.Label();
+            this.StartDateValue = new System.Windows.Forms.Label();
+            this.lblDays = new System.Windows.Forms.Label();
+            this.priceValuelbl = new System.Windows.Forms.Label();
+            this.lbPriCePerday = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupPaymentMetod = new System.Windows.Forms.GroupBox();
+            this.CardDetailspanel = new System.Windows.Forms.Panel();
+            this.CCVtxtbox = new System.Windows.Forms.TextBox();
+            this.CCVlbl = new System.Windows.Forms.Label();
+            this.ExpDateTxtbox = new System.Windows.Forms.TextBox();
+            this.ExpDatelbl = new System.Windows.Forms.Label();
+            this.cardNumTxtBox = new System.Windows.Forms.TextBox();
+            this.CardNumlbl = new System.Windows.Forms.Label();
+            this.Creditbtn = new System.Windows.Forms.RadioButton();
+            this.CasHbtn = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnPay = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.invalidLabel = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.groupPaymentMetod.SuspendLayout();
+            this.CardDetailspanel.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.BackColor = Color.FromArgb(74, 78, 105);
-            label1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 19);
-            label1.Name = "label1";
-            label1.Padding = new Padding(10, 0, 0, 0);
-            label1.Size = new Size(776, 39);
-            label1.TabIndex = 0;
-            label1.Text = "Payment";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(78)))), ((int)(((byte)(105)))));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 16);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(665, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Payment";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(242, 233, 228);
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(dropOffValue);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(pickUpValue);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(returnDateValue);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(totalValueLbl);
-            panel1.Controls.Add(totalLbl);
-            panel1.Controls.Add(taxValuelbl);
-            panel1.Controls.Add(taxlbl);
-            panel1.Controls.Add(StartDateValue);
-            panel1.Controls.Add(lblDays);
-            panel1.Controls.Add(priceValuelbl);
-            panel1.Controls.Add(lbPriCePerday);
-            panel1.Location = new Point(490, 125);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(300, 228);
-            panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.dropOffValue);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.pickUpValue);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.returnDateValue);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.totalValueLbl);
+            this.panel1.Controls.Add(this.totalLbl);
+            this.panel1.Controls.Add(this.taxValuelbl);
+            this.panel1.Controls.Add(this.taxlbl);
+            this.panel1.Controls.Add(this.StartDateValue);
+            this.panel1.Controls.Add(this.lblDays);
+            this.panel1.Controls.Add(this.priceValuelbl);
+            this.panel1.Controls.Add(this.lbPriCePerday);
+            this.panel1.Location = new System.Drawing.Point(420, 108);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(257, 198);
+            this.panel1.TabIndex = 1;
             // 
             // dropOffValue
             // 
-            dropOffValue.AutoSize = true;
-            dropOffValue.Location = new Point(169, 33);
-            dropOffValue.Name = "dropOffValue";
-            dropOffValue.Size = new Size(16, 15);
-            dropOffValue.TabIndex = 15;
-            dropOffValue.Text = "6 ";
+            this.dropOffValue.AutoSize = true;
+            this.dropOffValue.Location = new System.Drawing.Point(145, 29);
+            this.dropOffValue.Name = "dropOffValue";
+            this.dropOffValue.Size = new System.Drawing.Size(16, 13);
+            this.dropOffValue.TabIndex = 15;
+            this.dropOffValue.Text = "6 ";
+            this.dropOffValue.Click += new System.EventHandler(this.dropOffValue_Click);
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(18, 33);
-            label9.Name = "label9";
-            label9.Size = new Size(54, 15);
-            label9.TabIndex = 14;
-            label9.Text = "Drop off:";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Drop off:";
             // 
             // pickUpValue
             // 
-            pickUpValue.AutoSize = true;
-            pickUpValue.Location = new Point(169, 9);
-            pickUpValue.Name = "pickUpValue";
-            pickUpValue.Size = new Size(16, 15);
-            pickUpValue.TabIndex = 13;
-            pickUpValue.Text = "6 ";
+            this.pickUpValue.AutoSize = true;
+            this.pickUpValue.Location = new System.Drawing.Point(145, 8);
+            this.pickUpValue.Name = "pickUpValue";
+            this.pickUpValue.Size = new System.Drawing.Size(16, 13);
+            this.pickUpValue.TabIndex = 13;
+            this.pickUpValue.Text = "6 ";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(18, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(49, 15);
-            label7.TabIndex = 12;
-            label7.Text = "Pick up:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 8);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Pick up:";
             // 
             // returnDateValue
             // 
-            returnDateValue.AutoSize = true;
-            returnDateValue.Location = new Point(169, 84);
-            returnDateValue.Name = "returnDateValue";
-            returnDateValue.Size = new Size(16, 15);
-            returnDateValue.TabIndex = 11;
-            returnDateValue.Text = "6 ";
+            this.returnDateValue.AutoSize = true;
+            this.returnDateValue.Location = new System.Drawing.Point(145, 73);
+            this.returnDateValue.Name = "returnDateValue";
+            this.returnDateValue.Size = new System.Drawing.Size(16, 13);
+            this.returnDateValue.TabIndex = 11;
+            this.returnDateValue.Text = "6 ";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(18, 84);
-            label6.Name = "label6";
-            label6.Size = new Size(71, 15);
-            label6.TabIndex = 10;
-            label6.Text = "Return date:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 73);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Return date:";
             // 
             // label2
             // 
-            label2.BackColor = Color.Black;
-            label2.Location = new Point(9, 173);
-            label2.Name = "label2";
-            label2.Size = new Size(282, 1);
-            label2.TabIndex = 9;
-            label2.Text = "label2";
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(8, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(242, 1);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "label2";
             // 
             // totalValueLbl
             // 
-            totalValueLbl.AutoSize = true;
-            totalValueLbl.Location = new Point(167, 187);
-            totalValueLbl.Name = "totalValueLbl";
-            totalValueLbl.Size = new Size(49, 15);
-            totalValueLbl.TabIndex = 8;
-            totalValueLbl.Text = "620 EGP";
+            this.totalValueLbl.AutoSize = true;
+            this.totalValueLbl.Location = new System.Drawing.Point(143, 162);
+            this.totalValueLbl.Name = "totalValueLbl";
+            this.totalValueLbl.Size = new System.Drawing.Size(50, 13);
+            this.totalValueLbl.TabIndex = 8;
+            this.totalValueLbl.Text = "620 EGP";
             // 
             // totalLbl
             // 
-            totalLbl.AutoSize = true;
-            totalLbl.Location = new Point(16, 187);
-            totalLbl.Name = "totalLbl";
-            totalLbl.Size = new Size(36, 15);
-            totalLbl.TabIndex = 7;
-            totalLbl.Text = "Total:";
+            this.totalLbl.AutoSize = true;
+            this.totalLbl.Location = new System.Drawing.Point(14, 162);
+            this.totalLbl.Name = "totalLbl";
+            this.totalLbl.Size = new System.Drawing.Size(34, 13);
+            this.totalLbl.TabIndex = 7;
+            this.totalLbl.Text = "Total:";
             // 
             // taxValuelbl
             // 
-            taxValuelbl.AutoSize = true;
-            taxValuelbl.Location = new Point(169, 140);
-            taxValuelbl.Name = "taxValuelbl";
-            taxValuelbl.Size = new Size(43, 15);
-            taxValuelbl.TabIndex = 6;
-            taxValuelbl.Text = "20 EGP";
+            this.taxValuelbl.AutoSize = true;
+            this.taxValuelbl.Location = new System.Drawing.Point(145, 121);
+            this.taxValuelbl.Name = "taxValuelbl";
+            this.taxValuelbl.Size = new System.Drawing.Size(44, 13);
+            this.taxValuelbl.TabIndex = 6;
+            this.taxValuelbl.Text = "20 EGP";
             // 
             // taxlbl
             // 
-            taxlbl.AutoSize = true;
-            taxlbl.Location = new Point(18, 140);
-            taxlbl.Name = "taxlbl";
-            taxlbl.Size = new Size(27, 15);
-            taxlbl.TabIndex = 5;
-            taxlbl.Text = "Tax:";
+            this.taxlbl.AutoSize = true;
+            this.taxlbl.Location = new System.Drawing.Point(15, 121);
+            this.taxlbl.Name = "taxlbl";
+            this.taxlbl.Size = new System.Drawing.Size(28, 13);
+            this.taxlbl.TabIndex = 5;
+            this.taxlbl.Text = "Tax:";
             // 
             // StartDateValue
             // 
-            StartDateValue.AutoSize = true;
-            StartDateValue.Location = new Point(169, 59);
-            StartDateValue.Name = "StartDateValue";
-            StartDateValue.Size = new Size(16, 15);
-            StartDateValue.TabIndex = 4;
-            StartDateValue.Text = "6 ";
+            this.StartDateValue.AutoSize = true;
+            this.StartDateValue.Location = new System.Drawing.Point(145, 51);
+            this.StartDateValue.Name = "StartDateValue";
+            this.StartDateValue.Size = new System.Drawing.Size(16, 13);
+            this.StartDateValue.TabIndex = 4;
+            this.StartDateValue.Text = "6 ";
             // 
             // lblDays
             // 
-            lblDays.AutoSize = true;
-            lblDays.Location = new Point(18, 59);
-            lblDays.Name = "lblDays";
-            lblDays.Size = new Size(60, 15);
-            lblDays.TabIndex = 3;
-            lblDays.Text = "Start date:";
-            lblDays.Click += lblDays_Click;
+            this.lblDays.AutoSize = true;
+            this.lblDays.Location = new System.Drawing.Point(15, 51);
+            this.lblDays.Name = "lblDays";
+            this.lblDays.Size = new System.Drawing.Size(56, 13);
+            this.lblDays.TabIndex = 3;
+            this.lblDays.Text = "Start date:";
             // 
             // priceValuelbl
             // 
-            priceValuelbl.AutoSize = true;
-            priceValuelbl.Location = new Point(169, 113);
-            priceValuelbl.Name = "priceValuelbl";
-            priceValuelbl.Size = new Size(49, 15);
-            priceValuelbl.TabIndex = 2;
-            priceValuelbl.Text = "100 EGP";
-            priceValuelbl.Click += label4_Click;
+            this.priceValuelbl.AutoSize = true;
+            this.priceValuelbl.Location = new System.Drawing.Point(145, 98);
+            this.priceValuelbl.Name = "priceValuelbl";
+            this.priceValuelbl.Size = new System.Drawing.Size(50, 13);
+            this.priceValuelbl.TabIndex = 2;
+            this.priceValuelbl.Text = "100 EGP";
             // 
             // lbPriCePerday
             // 
-            lbPriCePerday.AutoSize = true;
-            lbPriCePerday.Location = new Point(18, 113);
-            lbPriCePerday.Name = "lbPriCePerday";
-            lbPriCePerday.Size = new Size(78, 15);
-            lbPriCePerday.TabIndex = 1;
-            lbPriCePerday.Text = "Price per day:";
-            lbPriCePerday.UseMnemonic = false;
-            lbPriCePerday.Click += label3_Click;
+            this.lbPriCePerday.AutoSize = true;
+            this.lbPriCePerday.Location = new System.Drawing.Point(15, 98);
+            this.lbPriCePerday.Name = "lbPriCePerday";
+            this.lbPriCePerday.Size = new System.Drawing.Size(72, 13);
+            this.lbPriCePerday.TabIndex = 1;
+            this.lbPriCePerday.Text = "Price per day:";
+            this.lbPriCePerday.UseMnemonic = false;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(490, 88);
-            label3.Name = "label3";
-            label3.Size = new Size(181, 25);
-            label3.TabIndex = 10;
-            label3.Text = "Booking summary:";
-            label3.Click += label3_Click_1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(420, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 25);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Booking summary:";
             // 
             // groupPaymentMetod
             // 
-            groupPaymentMetod.BackColor = Color.FromArgb(242, 233, 228);
-            groupPaymentMetod.Controls.Add(CardDetailspanel);
-            groupPaymentMetod.Controls.Add(Creditbtn);
-            groupPaymentMetod.Controls.Add(CasHbtn);
-            groupPaymentMetod.Location = new Point(12, 125);
-            groupPaymentMetod.Name = "groupPaymentMetod";
-            groupPaymentMetod.Size = new Size(250, 203);
-            groupPaymentMetod.TabIndex = 11;
-            groupPaymentMetod.TabStop = false;
+            this.groupPaymentMetod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            this.groupPaymentMetod.Controls.Add(this.CardDetailspanel);
+            this.groupPaymentMetod.Controls.Add(this.Creditbtn);
+            this.groupPaymentMetod.Controls.Add(this.CasHbtn);
+            this.groupPaymentMetod.Location = new System.Drawing.Point(10, 108);
+            this.groupPaymentMetod.Name = "groupPaymentMetod";
+            this.groupPaymentMetod.Size = new System.Drawing.Size(214, 176);
+            this.groupPaymentMetod.TabIndex = 11;
+            this.groupPaymentMetod.TabStop = false;
             // 
             // CardDetailspanel
             // 
-            CardDetailspanel.Controls.Add(CCVtxtbox);
-            CardDetailspanel.Controls.Add(CCVlbl);
-            CardDetailspanel.Controls.Add(ExpDateTxtbox);
-            CardDetailspanel.Controls.Add(ExpDatelbl);
-            CardDetailspanel.Controls.Add(cardNumTxtBox);
-            CardDetailspanel.Controls.Add(CardNumlbl);
-            CardDetailspanel.Location = new Point(6, 85);
-            CardDetailspanel.Name = "CardDetailspanel";
-            CardDetailspanel.Size = new Size(220, 100);
-            CardDetailspanel.TabIndex = 2;
-            CardDetailspanel.Visible = false;
+            this.CardDetailspanel.Controls.Add(this.CCVtxtbox);
+            this.CardDetailspanel.Controls.Add(this.CCVlbl);
+            this.CardDetailspanel.Controls.Add(this.ExpDateTxtbox);
+            this.CardDetailspanel.Controls.Add(this.ExpDatelbl);
+            this.CardDetailspanel.Controls.Add(this.cardNumTxtBox);
+            this.CardDetailspanel.Controls.Add(this.CardNumlbl);
+            this.CardDetailspanel.Location = new System.Drawing.Point(5, 74);
+            this.CardDetailspanel.Name = "CardDetailspanel";
+            this.CardDetailspanel.Size = new System.Drawing.Size(189, 87);
+            this.CardDetailspanel.TabIndex = 2;
+            this.CardDetailspanel.Visible = false;
+            this.CardDetailspanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CardDetailspanel_Paint);
             // 
             // CCVtxtbox
             // 
-            CCVtxtbox.Location = new Point(110, 72);
-            CCVtxtbox.Name = "CCVtxtbox";
-            CCVtxtbox.Size = new Size(100, 23);
-            CCVtxtbox.TabIndex = 5;
+            this.CCVtxtbox.Location = new System.Drawing.Point(94, 62);
+            this.CCVtxtbox.Name = "CCVtxtbox";
+            this.CCVtxtbox.Size = new System.Drawing.Size(86, 20);
+            this.CCVtxtbox.TabIndex = 5;
             // 
             // CCVlbl
             // 
-            CCVlbl.AutoSize = true;
-            CCVlbl.Location = new Point(10, 75);
-            CCVlbl.Name = "CCVlbl";
-            CCVlbl.Size = new Size(30, 15);
-            CCVlbl.TabIndex = 4;
-            CCVlbl.Text = "CCV";
+            this.CCVlbl.AutoSize = true;
+            this.CCVlbl.Location = new System.Drawing.Point(9, 65);
+            this.CCVlbl.Name = "CCVlbl";
+            this.CCVlbl.Size = new System.Drawing.Size(28, 13);
+            this.CCVlbl.TabIndex = 4;
+            this.CCVlbl.Text = "CCV";
             // 
             // ExpDateTxtbox
             // 
-            ExpDateTxtbox.Location = new Point(110, 39);
-            ExpDateTxtbox.Name = "ExpDateTxtbox";
-            ExpDateTxtbox.Size = new Size(100, 23);
-            ExpDateTxtbox.TabIndex = 3;
+            this.ExpDateTxtbox.Location = new System.Drawing.Point(94, 34);
+            this.ExpDateTxtbox.Name = "ExpDateTxtbox";
+            this.ExpDateTxtbox.Size = new System.Drawing.Size(86, 20);
+            this.ExpDateTxtbox.TabIndex = 3;
             // 
             // ExpDatelbl
             // 
-            ExpDatelbl.AutoSize = true;
-            ExpDatelbl.Location = new Point(10, 42);
-            ExpDatelbl.Name = "ExpDatelbl";
-            ExpDatelbl.Size = new Size(68, 15);
-            ExpDatelbl.TabIndex = 2;
-            ExpDatelbl.Text = "Expiry Date:";
+            this.ExpDatelbl.AutoSize = true;
+            this.ExpDatelbl.Location = new System.Drawing.Point(9, 36);
+            this.ExpDatelbl.Name = "ExpDatelbl";
+            this.ExpDatelbl.Size = new System.Drawing.Size(64, 13);
+            this.ExpDatelbl.TabIndex = 2;
+            this.ExpDatelbl.Text = "Expiry Date:";
             // 
             // cardNumTxtBox
             // 
-            cardNumTxtBox.Location = new Point(110, 10);
-            cardNumTxtBox.Name = "cardNumTxtBox";
-            cardNumTxtBox.Size = new Size(100, 23);
-            cardNumTxtBox.TabIndex = 1;
+            this.cardNumTxtBox.Location = new System.Drawing.Point(94, 9);
+            this.cardNumTxtBox.Name = "cardNumTxtBox";
+            this.cardNumTxtBox.Size = new System.Drawing.Size(86, 20);
+            this.cardNumTxtBox.TabIndex = 1;
             // 
             // CardNumlbl
             // 
-            CardNumlbl.AutoSize = true;
-            CardNumlbl.Location = new Point(10, 13);
-            CardNumlbl.Name = "CardNumlbl";
-            CardNumlbl.Size = new Size(82, 15);
-            CardNumlbl.TabIndex = 0;
-            CardNumlbl.Text = "Card Number:";
+            this.CardNumlbl.AutoSize = true;
+            this.CardNumlbl.Location = new System.Drawing.Point(9, 11);
+            this.CardNumlbl.Name = "CardNumlbl";
+            this.CardNumlbl.Size = new System.Drawing.Size(72, 13);
+            this.CardNumlbl.TabIndex = 0;
+            this.CardNumlbl.Text = "Card Number:";
             // 
             // Creditbtn
             // 
-            Creditbtn.AutoSize = true;
-            Creditbtn.Location = new Point(20, 60);
-            Creditbtn.Name = "Creditbtn";
-            Creditbtn.Size = new Size(85, 19);
-            Creditbtn.TabIndex = 1;
-            Creditbtn.TabStop = true;
-            Creditbtn.Text = "Credit Card";
-            Creditbtn.UseVisualStyleBackColor = true;
-            Creditbtn.CheckedChanged += Creditbtn_CheckedChanged;
+            this.Creditbtn.AutoSize = true;
+            this.Creditbtn.Location = new System.Drawing.Point(17, 52);
+            this.Creditbtn.Name = "Creditbtn";
+            this.Creditbtn.Size = new System.Drawing.Size(77, 17);
+            this.Creditbtn.TabIndex = 1;
+            this.Creditbtn.TabStop = true;
+            this.Creditbtn.Text = "Credit Card";
+            this.Creditbtn.UseVisualStyleBackColor = true;
+            this.Creditbtn.CheckedChanged += new System.EventHandler(this.Creditbtn_CheckedChanged_1);
             // 
             // CasHbtn
             // 
-            CasHbtn.AutoSize = true;
-            CasHbtn.Location = new Point(20, 30);
-            CasHbtn.Name = "CasHbtn";
-            CasHbtn.Size = new Size(51, 19);
-            CasHbtn.TabIndex = 0;
-            CasHbtn.TabStop = true;
-            CasHbtn.Text = "Cash";
-            CasHbtn.UseVisualStyleBackColor = true;
-            CasHbtn.CheckedChanged += CasHbtn_CheckedChanged;
+            this.CasHbtn.AutoSize = true;
+            this.CasHbtn.Location = new System.Drawing.Point(17, 26);
+            this.CasHbtn.Name = "CasHbtn";
+            this.CasHbtn.Size = new System.Drawing.Size(49, 17);
+            this.CasHbtn.TabIndex = 0;
+            this.CasHbtn.TabStop = true;
+            this.CasHbtn.Text = "Cash";
+            this.CasHbtn.UseVisualStyleBackColor = true;
+            this.CasHbtn.CheckedChanged += new System.EventHandler(this.CasHbtn_CheckedChanged_1);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(12, 88);
-            label4.Name = "label4";
-            label4.Size = new Size(169, 25);
-            label4.TabIndex = 12;
-            label4.Text = "Payment Method:";
-            label4.Click += label4_Click_1;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(169, 25);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Payment Method:";
             // 
             // btnPay
             // 
-            btnPay.BackColor = Color.FromArgb(154, 140, 152);
-            btnPay.FlatStyle = FlatStyle.Flat;
-            btnPay.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPay.ForeColor = Color.White;
-            btnPay.Location = new Point(494, 359);
-            btnPay.Name = "btnPay";
-            btnPay.Size = new Size(298, 40);
-            btnPay.TabIndex = 13;
-            btnPay.Text = "Pay now";
-            btnPay.UseVisualStyleBackColor = false;
-            btnPay.Click += btnPay_Click;
+            this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(140)))), ((int)(((byte)(152)))));
+            this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.Location = new System.Drawing.Point(423, 311);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(255, 35);
+            this.btnPay.TabIndex = 13;
+            this.btnPay.Text = "Pay now";
+            this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click_1);
             // 
             // backBtn
             // 
-            backBtn.BackColor = Color.FromArgb(34, 34, 59);
-            backBtn.FlatStyle = FlatStyle.Flat;
-            backBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backBtn.ForeColor = Color.White;
-            backBtn.Location = new Point(494, 405);
-            backBtn.Name = "backBtn";
-            backBtn.Size = new Size(298, 40);
-            backBtn.TabIndex = 14;
-            backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(59)))));
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.White;
+            this.backBtn.Location = new System.Drawing.Point(423, 351);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(255, 35);
+            this.backBtn.TabIndex = 14;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // invalidLabel
             // 
-            invalidLabel.AutoSize = true;
-            invalidLabel.ForeColor = Color.Red;
-            invalidLabel.Location = new Point(12, 336);
-            invalidLabel.Name = "invalidLabel";
-            invalidLabel.Size = new Size(38, 15);
-            invalidLabel.TabIndex = 15;
-            invalidLabel.Text = "label5";
-            invalidLabel.Visible = false;
+            this.invalidLabel.AutoSize = true;
+            this.invalidLabel.ForeColor = System.Drawing.Color.Red;
+            this.invalidLabel.Location = new System.Drawing.Point(10, 291);
+            this.invalidLabel.Name = "invalidLabel";
+            this.invalidLabel.Size = new System.Drawing.Size(35, 13);
+            this.invalidLabel.TabIndex = 15;
+            this.invalidLabel.Text = "label5";
+            this.invalidLabel.Visible = false;
             // 
             // Checkout
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(invalidLabel);
-            Controls.Add(backBtn);
-            Controls.Add(btnPay);
-            Controls.Add(label4);
-            Controls.Add(groupPaymentMetod);
-            Controls.Add(label3);
-            Controls.Add(panel1);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Checkout";
-            Text = "Checkout";
-            Load += Checkout_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            groupPaymentMetod.ResumeLayout(false);
-            groupPaymentMetod.PerformLayout();
-            CardDetailspanel.ResumeLayout(false);
-            CardDetailspanel.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(686, 390);
+            this.Controls.Add(this.invalidLabel);
+            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.btnPay);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.groupPaymentMetod);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Checkout";
+            this.Text = "Checkout";
+            this.Load += new System.EventHandler(this.Checkout_Load_1);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupPaymentMetod.ResumeLayout(false);
+            this.groupPaymentMetod.PerformLayout();
+            this.CardDetailspanel.ResumeLayout(false);
+            this.CardDetailspanel.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
